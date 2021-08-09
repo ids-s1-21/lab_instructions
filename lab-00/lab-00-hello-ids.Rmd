@@ -14,83 +14,100 @@ editor_options:
 Below are the tasks we will be working through in today's workshop.
 The primary goal in all of this is to go through a shakedown process for some of the core technology we will be using in this course.
 
-Each workshop Zoom session will start with a brief introduction in the "big group" and then we will move everyone into breakout rooms in small teams.
+Each workshop session will start with a brief introduction in the "big group" and then we will move everyone into breakout rooms in small teams.
 For this week the teams will be randomly assigned.
+If you are online for this session, when in a breakout room everyone should turn on their audio and video (if possible).
 
-1.  Once in the breakout room everyone should turn on their audio and video (if possible).
-
-2.  Take turns introducing yourselves (e.g. your name, where you are currently, where you studied previously, etc.).
-
-3.  After each person in the group has had a turn, everyone should provide constructive feedback on any audio or video difficulties encountered
-
-```{r rstudio-cloud, fig.margin = TRUE, echo = FALSE}
-knitr::include_graphics("img/rstudio-cloud.png")
+```{marginfigure}
+**Note:** If you are online, after each person in the group has had a turn, everyone should provide constructive feedback on any audio or video difficulties encountered.
 ```
 
-4.  (If you haven't yet done so...) Go to Learn and click on the **Join RStudio Cloud** link to sign up for a free RStudio Cloud account which will be automatically enrolled in our course's space.
-    Feel free to try launching a project and exploring.
+1.  Take turns introducing yourselves (e.g. your name, where you are currently, where you studied previously, etc.). Tell the rest of your team a boring fact about yourself. (For example, "I had corn flakes for breakfast this morning.")
 
-5.  Each participant should now take turns to briefly share their screen, we recommend sharing your browser window with RStudio Cloud open.
-    Provide feedback to one another about the quality of the share, pay particular mind to whether or not things like text are readable.
-
-6.  Use the **Ask for help** button within Zoom and see if a tutor shows up, feel free to move on while you wait.
-
-```{r piazza, fig.margin = TRUE, echo = FALSE}
-knitr::include_graphics("img/piazza.png")
+```{marginfigure}
+**Note:** Each participant in the team needs to have completed the "first time setup"" to be able to do the rest of the workshop.
+    Team members who have already got themselves setup can move on and include the remaining members once they are ready.
 ```
 
-7.  Go to Learn and click on the **Piazza** link on the left to activate your Piazza account. Read my post titled "Welcome to Piazza!" there.
+2.  Before the session, you should have completed the [Getting to know you survey](https://forms.office.com/Pages/ResponsePage.aspx?id=sAafLmkWiUWHiRCgaTTcYdffF13VDSBAsmaFgj3BcYtUREVZQUVSWjY2UlZDTVdMWjM3NzI3VzVQUi4u) and set up accounts on:
 
-<br><br>
+    -   GitHub
+    -   RStudio Cloud
+    -   Piazza
 
-7.  Complete the Getting to know you survey [here](https://forms.office.com/Pages/ResponsePage.aspx?id=sAafLmkWiUWHiRCgaTTcYRiRHjHRDWhOuLE_6JyNA0dUMkU3TzFXRTkyTFBVVjBLVUVTRDdJVlg2WS4u).
-    One of the questions on the survey asks you about your GitHub username.
-    If you haven't yet created one, see [here](https://happygitwithr.com/github-acct.html) for advice on selecting a user name and see the video titled *Meet the toolkit: version control and collaboration* [here](https://www.introds.org/post/01-week/#videos) for step-by-step instructions.
+    If you haven't, make sure you do the first two now, and link the GitHub and RStudio Cloud accounts.
+    Instructions on how to do this can be found on the [Setup & Troubleshooting](https://ids-s1-21.netlify.app/troubleshoot/) page on the course website.
 
-8.  Check your email and accept the invitation to join the GitHub organization for this course.
-    If you already have accepted it, move on to the next step.
-    If you have not yet accepted it, message me on Teams to let me know and I'll send the invite.
-    You need to accept the invitation before moving on to the next step.
+    If you encounter any issue you can ask for help by raising your hand (in person) or pressing the **Ask for help** button (within Zoom).
 
-9.  Connect your RStudio and GitHub accounts by following the steps below.
+We're now going to start working with R code.
+Don't worry today if you don't understand what every line of code does---the purpose of this workshop is to give you experience working with RStudio Cloud, and pushing, committing and pulling from/to GitHub.
+Mostly you'll just be replacing text in a data frame in an R Markdown file in your team's repository.
 
--   Click on your name on the top right corner to open the right menu.
--   Then, click on Authentication.
+Lets start by making a data frame.
+Normally we'll load these from outside R, but you can also create them within R as well, using a function called "`tibble`".
+This isn't something you'll want to do except for really simple data frames---like the one we're about to make!
 
-```{r github-auth-1, echo = FALSE}
-knitr::include_graphics("img/github-auth-1.png")
+The data frame we'll make will contain three variables: the name of each member of the team, the outcome of rolling a die for each member, and a colour for each member.
+We're going to fill in the data frame with some information.
+
+The entries for the first column, for someone called Jamie, are already filled in for you.
+Leave these in place.
+
+3.  Decide in what order you will work on the task (i.e. who is going first, second, third).
+
+Now, in turn, each member of the team should perform the following.
+
+4.  Using the Git tab in the top-right, **pull** your team's repository from GitHub into RStudio Cloud.
+    (It will contain your team name in the name of the repository).
+
+5.  Add your name into the first unused space in the `names` vector (i.e. the first person replaces the text `Name 1`, the second person replaces the text `Name 2`, and the third person replaces the text `Name 3`; if you have four or more people on your team the fourth person will have to add a completely new entry to the vector).
+
+```{r die, echo = FALSE, fig.margin = T}
+knitr::include_graphics("img/d20.jpg")
 ```
 
--   In the Authentication window, check the box for *Enabled*.
+6.  Roll a 20-sided die.
+    (You can do this within R by typing `sample(20, 1)` into the console---or just roll a die, if you happen to have one with you!)
+    Enter the result into the `nums` vector, replacing the next `NA` (or extending the vector, if you are the fourth or later member of your team).
+    **Do not** enclose it in quotes!
 
-```{r github-auth-2, echo = FALSE}
-knitr::include_graphics("img/github-auth-2.png")
+7.  Pick a colour, and enter it into the `colours` vector, like you did with your name.
+    If you want to see a list of available colours, type `colours()` (or `colors()`) into the console, and press Enter.
+
+8.  Put one of your hobbies in the `hobbies` vector, like you did with your name.
+    This can be anything you like, but make sure it has quotes around it!
+
+9.  Pull again (in case anyone has made changes since the last time you pulled), commit (using a message like "Added Jamie's entries") and push, using the Git tab at the top-right.
+    Make sure your commit messages say which exercise you have completed.
+
+If everyone in the team has completed Exercises 4--9, move on to the next exercise.
+Otherwise, the next member of your team should go back to Exercise 4.
+
+10. "Uncomment" the three lines that look like the code below (that is, remove the `#` symbol from the beginning, so that R knows to run them as lines of code). Then press the "Knit" button. You should see that a plot has appeared in your R Markdown document, just after the code.
+
+```{r colplot, echo = T}
+# p <- ggplot(team_data, aes(x = name, y = die_roll)) +
+#   geom_col(fill = team_data$colour)
+# p
 ```
 
--   In the next window, click on the green box that says "Authorize rstudio".
+11. What does the plot show?
+    Type your answer into the space provided in your team's R Markdown document.
 
-```{r github-auth-3, echo = FALSE}
-knitr::include_graphics("img/github-auth-3.png")
-```
+12. Uncomment the code corresponding to this exercise, and press the "Knit" button.
+    What's changed about this plot?
 
--   Back in the Authentication window, check the box for *Private repo access also enabled*, and once again, on the green box that says "Authorize rstudio" in the next window. At this point you should also make sure that the course organization shows up for you under *Organization access*. If it does not, this means you have not yet accepted the GitHub invitation to join the course, and you should go back and do that.
+13. Replace `Insert text here` each time it appears with sensible choices of text.
+    Press the "Knit" button.
 
-```{r github-auth-4, echo = FALSE}
-knitr::include_graphics("img/github-auth-4.png")
-```
+14. Have a look at the plot on the knitted R Markdown document for "Exercise 14".
+    (Re-knit the document if you need to.) This plot probably isn't a good data visualisation, unless one of your team also has photography as a hobby.
+    In fact, suppose you had a data frame that extended to everyone taking this course.
+    The data visualisation produced by this method would probably be even worse at conveying information.
+    Why?
+    Can you think of any way to display these data nicely?
+    (You do not need to write code to do this!)
 
--   Once you're done, both of these boxes should be checked.
-
-```{r github-auth-5, echo = FALSE}
-knitr::include_graphics("img/github-auth-5.png")
-```
-
--   To confirm that you've successfully linked up your GitHub and RStudio Cloud accounts, [GitHub settings \> Applications](https://github.com/settings/applications). You should see RStudio listed as an authorized app under *Authorized OAuth Apps*. If you don't this is a good time to ask a question (by calling a tutor if during the workshop or asking on Piazza).
-
-```{r github-auth-6, echo = FALSE}
-knitr::include_graphics("img/github-auth-6.png")
-```
-
-Once you're done with these steps, you're done with Lab 00!
-You do not need to turn in anything for this lab.
-However, note that you must have completed all of these steps before you can start on your homework assignment.
+That's the end of this lab!
+Remember, this lab isn't marked.
