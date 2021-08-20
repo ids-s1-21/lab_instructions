@@ -47,7 +47,7 @@ Complete the following steps before you join the live workshop!
 
 You have three tasks you should complete before the workshop:
 
--   **Task 1:** Watch [this week's videos](https://www.introds.org/post/06-week/)!
+-   **Task 1:** Watch [this week's videos](https://idsed.digital/week06/)!
 
 ```{r selectorgadget, fig.margin = TRUE, echo = FALSE}
 knitr::include_graphics("img/selectorgadget.png")
