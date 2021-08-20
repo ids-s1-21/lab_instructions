@@ -22,7 +22,7 @@ We want you to get creative and make a visualisation that tells a (much!) better
 -   Reshaping data.
 
 ::: {.home}
-Complete the following steps before you join the live workshop!
+Complete the following steps before you come to the workshop!
 :::
 
 # Workshop prep
@@ -34,20 +34,21 @@ It is crucial you do these before the workshop to ensure a smooth (and enjoyable
 -   **Meet your teammates:** You can find your team assignment for the rest of the semester [here](https://github.com/ids-s1-20/teams/blob/main/ids20-teams.csv). We're also setting up a channel for your team on, well, Teams! Say hi to everyone there before the workshop. And don't forget to let your tutor know your team name!
 
 ::: {.video}
-Complete the following steps during the live workshop with your team.
+Complete the following steps during the workshop with your team.
 :::
 
 # Warm up with your team
 
-This is (likely) the first time you're getting to meet your teammates "in person".
-Take 5 minutes to go around and introduce yourselves: name, year, program, where you're joining from, whatever else you like.
-Cap off your self introduction by pointing out one error in the following visual.
+Take 5 minutes to go around the team, each pointing out one error in the following visual.
 
 ```{r echo=FALSE}
 knitr::include_graphics("img/Speaking-the-world.jpg")
 ```
 
-Once the introductions are over, give a number to each team member.
+Once you're done with this, give a number to each team member.
+```{marginfigure}
+If you want to assign numbers at random, you can go to the [Random.org sequence generator](https://www.random.org/sequences/?min=1&max=6&col=1&format=html&rnd=new), and assign the first number that appears to the person whose name is first in the alphabet, and so on.  Skip over any numbers that are larger than the size of your team.
+```
 In this lab, team members will take turns sharing their screen and working on an exercise in the common team repo, commit and push their changes, and then the next team member will take over and **pull** the changes before they make any further changes to their lab.
 In the lab instructions you'll see markers for
 
@@ -101,7 +102,10 @@ In other words, we will convert the data from the long format to wide format.
 
 # Exercises
 
-**1️⃣ TEAM MEMBER 1 should share their screen, write the answer to Exercises 1, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing!**
+**1️⃣ TEAM MEMBER 1 should write the answer to Exercises 1, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing!**
+```{marginfigure}
+If someone in your team is participating remotely, TEAM MEMBER 1 will need to share their screen.
+```
 
 1.  If the long data will have a row for each year/faculty type combination, and there are 5 faculty types and 11 years of data, how many rows will the data have? Discuss as a team and write down your answer.
 
@@ -109,7 +113,10 @@ In other words, we will convert the data from the long format to wide format.
 
 ------------------------------------------------------------------------
 
-**2️⃣ TEAM MEMBER 2 should now share their screen and pull ⬇️ before doing anything else. They should then write the answers to Exercises 2 and 3, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing!**
+**2️⃣ TEAM MEMBER 2 should now pull ⬇️ before doing anything else. They should then write the answers to Exercises 2 and 3, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing!**
+```{marginfigure}
+If someone in your team is participating remotely, TEAM MEMBER 2 will need to share their screen.
+```
 
 We do the wide to long conversation using `pivot_longer()`.
 The animation below show how this function works, as well as its counterpart `pivot_wider()`.
@@ -146,9 +153,12 @@ staff_long <- ___ %>%
 
 ------------------------------------------------------------------------
 
-**TEAM MEMBER 3 should now share their screen and pull ⬇️ before doing anything else. They should then write the answers to Exercises 4 and 5, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing!**
+**TEAM MEMBER 3 should now pull ⬇️ before doing anything else. They should then write the answers to Exercises 4 and 5, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing!**
+```{marginfigure}
+If someone in your team is participating remotely, TEAM MEMBER 3 will need to share their screen.
+```
 
-4.  We'll plot instructional staff employment trends as a line plot. A possible approach for creating a line plot where we color the lines by faculty type is the following, but it doesn't quite look right. What seems to be the issue?
+4.  We'll plot instructional staff employment trends as a line plot. A possible approach for creating a line plot where we color the lines by faculty type is the following, but it doesn't quite look right. What's wrong with the graph?  (You don't need to say how to fix it here---that's the next question!)
 
 ```{r eval=FALSE}
 staff_long %>%
@@ -162,7 +172,10 @@ staff_long %>%
 
 ------------------------------------------------------------------------
 
-**TEAM MEMBER 4 should now share their screen and pull ⬇️ before doing anything else. They should then write the answers to Exercise 6, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing! (If your team has fewer than 4 people, just move back to the first member.)**
+**TEAM MEMBER 4 should now pull ⬇️ before doing anything else. They should then write the answers to Exercise 6, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing! (If your team has fewer than 4 people, just move back to the first member.)**
+```{marginfigure}
+If someone in your team is participating remotely, TEAM MEMBER 1 will need to share their screen.
+```
 
 6.  Improve the line plot from the previous exercise by fixing up its labels (title, axis labels, and legend label) as well as any other components you think could benefit from improvement.
 
@@ -170,7 +183,10 @@ staff_long %>%
 
 ------------------------------------------------------------------------
 
-**TEAM MEMBER 5 should now share their screen and pull ⬇️ before doing anything else. They should then write the answers to Exercise 7 and 8, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing! (If your team has fewer than 5 people, just move back to the first member.)**
+**TEAM MEMBER 5 should now pull ⬇️ before doing anything else. They should then write the answers to Exercise 7 and 8, and then commit and and push their changes. Everyone else: participate, help out, but no typing in the R Markdown document and no committing/pushing! (If your team has fewer than 5 people, just move back to the first member.)**
+```{marginfigure}
+If someone in your team is participating remotely, TEAM MEMBER 1 will need to share their screen.
+```
 
 7.  Suppose the objective of this plot was to show that the proportion of part-time faculty have gone up over time compared to other instructional staff types. What changes would you propose making to this plot to tell this story? Write down your idea(s). The more precise you are, the easier the next step will be. Get creative, and think about how you can modify the dataset to give you new/different variables to work with.
 8.  Implement at least one of these ideas you came up with in the previous exercise. You should produce an improved data visualisation and accompany your visualisation with a brief paragraph describing the choices you made in your improvement, specifically discussing what you didn't like in the original plot and why, and how you addressed them in the visualisation you created.

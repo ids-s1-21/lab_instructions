@@ -25,7 +25,7 @@ Additionally, National Geographic ran a data visualization communication contest
 -   Get more practice using with Git and GitHub.
 
 ::: {.home}
-Complete the following steps before you join the live workshop!
+Complete the following steps before you come to the workshop!
 :::
 
 # Getting started
@@ -80,7 +80,7 @@ The variable descriptions are as follows:
 -   `total_pop`: Total population according to Gapminder
 
 ::: {.video}
-Complete the following steps during the live workshop with your team.
+Complete the following steps during the workshop with your team.
 :::
 
 # Warm up with your team
