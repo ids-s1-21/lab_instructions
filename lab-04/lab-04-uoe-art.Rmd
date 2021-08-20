@@ -196,11 +196,8 @@ They're relative links.
 See the help for `str_replace()` to find out how it works. Remember that the first argument is passed in from the pipeline, so you just need to define the `pattern` and `replacement` arguments.
 ```
 
-1.  Click on one of art piece titles in your browser and take note of the url of the webpage it takes you to. Think about how that url compares to what we scraped above? How is it different? Using `str_replace()`, fix the URLs. You'll note something special happening in the `pattern` to replace. We want to replace the `.`, but we have it as `\\.`. This is because the period `.` is a special character and so we need to escape it first with backslashes, `\\`s. Artists
+1.  Click on one of art piece titles in your browser and take note of the url of the webpage it takes you to. Think about how that url compares to what we scraped above? How is it different? Using `str_replace()`, fix the URLs. You'll note something special happening in the `pattern` to replace. We want to replace the `.`, but we have it as `\\.`. This is because the period `.` is a special character and so we need to escape it first with backslashes, `\\`s.
 
-```{=html}
-<!-- -->
-```
 2.  Fill in the blanks to scrape artist names.
 
 ## Put it altogether
@@ -211,7 +208,7 @@ See the help for `str_replace()` to find out how it works. Remember that the fir
 
 4.  Click on the next page, and grab its url. Fill in the blank in to define a new object: `second_url`. Copy-paste code from top of the R script to scrape the new set of art pieces, and save the resulting data frame as `second_ten`.
 
-✅ ⬆️ If you haven't done so recently, c*ommit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+✅ ⬆️ *If you haven't done so recently, commit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 # Functions
 
@@ -272,7 +269,7 @@ scrape_page(first_url)
 scrape_page(second_url)
 ```
 
-✅ ⬆️ If you haven't done so recently, c*ommit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+✅ ⬆️ *If you haven't done so recently, commit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 # Iteration
 
@@ -330,7 +327,7 @@ map_dfr(urls, scrape_page)
 Aim to make it to this point during the workshop.
 :::
 
-✅ ⬆️ If you haven't done so recently, c*ommit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+✅ ⬆️ *If you haven't done so recently, commit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 # Analysis
 
@@ -354,14 +351,11 @@ Luckily, there's a function that does just this: `separate()`!
 And once we have completed separating the single `title` column into `title` and `date`, we need to do further clean-up in the `date` column to get rid of extraneous `)`s with `str_remove()`, capture year information, and save the data as a numeric variable.
 
 ```{marginfigure}
-**Hint:** Remember escaping special characters from yesterday's lecture? You'll need to use that trick again.
+**Hint:** Remember escaping special characters from this weeks lecture? You'll need to use that trick again.
 ```
 
 9.  Fill in the blanks in to implement the data wrangling we described above. Note that this will result in some warnings when you run the code, and that's OK! Read the warnings, and explain what they mean, and why we are ok with leaving them in given that our objective is to just capture `year` where it's convenient to do so.
 
-```{=html}
-<!-- -->
-```
 10. Print out a summary of the data frame using the `skim()` function.
     How many pieces have artist info missing?
     How many have year info missing?
@@ -376,7 +370,7 @@ And once we have completed separating the single `title` column into `title` and
 
 12. Find which piece has the out of the ordinary year and go to its page on the art collection website to find the correct year for it. Can you tell why our code didn't capture the correct year information? Correct the error in the data frame and visualize the data again.
 
-🧶 ✅ ⬆️ If you haven't done so recently, knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+🧶 ✅ ⬆️ *If you haven't done so recently, knit, commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 13. Who is the most commonly featured artist in the collection? Do you know them? Any guess as to why the university has so many pieces from them?
 
@@ -387,4 +381,4 @@ consider how you might capture titles where the word appears as "child" and "Chi
 
 14. Final question! How many art pieces have the word "child" in their title? Try to figure it out, and ask for help if you're stuck.
 
-🧶 ✅ ⬆️ Knit, *commit, and push your final changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+🧶 ✅ ⬆️ *Knit, commit, and push your final changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
