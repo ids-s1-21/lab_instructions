@@ -301,7 +301,11 @@ Aim to make it to this point during the workshop.
 Note that your bar plot won't exactly match the one from the BuzzFeed News article. This is likely because the data has been updated since the article was published.  Don't worry if you can't make the bar plot have all the bars in decreasing order of size---but you might like to try anyway!
 ```
 
-6.  In a single pipeline, filter for laureates who won their prize in the US, but were born outside of the US, and then create a frequency table (with the `count()` function) for their birth country (`born_country`) and arrange the resulting data frame in descending order of number of observations for each country. Which country is the most common? Make a (horizontal) bar plot of the data.
+6.  In a single pipeline, filter for laureates who won their prize in the US, but were born outside of the US, and then create a frequency table (with the `count()` function) for their birth country (`born_country`) and arrange the resulting data frame in descending order of number of observations for each country. **Note that we're now no longer restricting to only the four science prizes.** Which country is the most common? Make a (horizontal) bar plot of the data.
+
+```{marginfigure}
+Hint: you'll need to go back to the `novel_living` data frame.  You may wish to use `mutate` again to recreate the `country_us` and `born_country_us` variables.
+```
 
 🧶 ✅ ⬆️ Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
