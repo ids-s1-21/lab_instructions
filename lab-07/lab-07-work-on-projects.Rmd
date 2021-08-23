@@ -17,7 +17,7 @@ This means no separate `lab-07` repo for your lab, everything goes in your proje
 Your lab score will be based on having completed these steps and, as usual, individual contributions to the project repo for these particular tasks.
 
 Once you complete these, use the rest of the time to, well, work on your project!
-Remember, your project assignment is [here](https://www.introds.org/#project).
+Remember, your project assignment is [here](https://idsed.digital/assessments/project/).
 
 If you haven't yet done so (I know some team members have not!) go to the course organization on GitHub and clone your project repo titled `project-TEAM_NAME`.
 And if you have, pull before you proceed since I've made some updates to your repos.
@@ -78,13 +78,3 @@ When done, close the issue with the relevant commit. You can do this by prefacin
 
 -   Each member should then open an issue on the repo with their task, and assign it to themselves. Include as much detail as possible to make sure you remember your discussion.
 -   **Strongly recommended:** Get a hold of a tutor and run your ideas by them.
-
-## Presentations
-
-You have two options for presenting: live during the workshop on Zoom or submitting a pre-recorded video.
-Logistically, the live presentation might be easier (you show up, give your 5 minute presentation as a team, listen to the presentations of others in your workshop group, and carry on!).
-But some of you might choose to not do a live presentation if you have geographically distributed members on the team, potentially with tricky internet setup.
-If so, you might want to pre-record your presentation and submit the video.
-You can find instructions for pre-recording your presentations [here](https://docs.google.com/document/d/1FxpFqUbEVpOzp7PWICC8gEvmIKfsNPT3mmQuSufsGHQ/edit?usp=sharing).
-Discuss as a team which you prefer and submit your preference on the form [here](https://forms.office.com/Pages/ResponsePage.aspx?id=sAafLmkWiUWHiRCgaTTcYRiRHjHRDWhOuLE_6JyNA0dUOEtKMEE4NUc1TFRZOTZIVEVDWUZJSkVBQi4u).
-**Only one response per team!**

@@ -31,7 +31,7 @@ Complete the following steps before you join the live workshop!
 
 You have two tasks you should complete before the workshop:
 
--   Watch [this week's videos](https://www.introds.org/post/08-week/).
+-   Watch [this week's videos](https://idsed.digital/week08/#videos).
 -   Read the study description below.
 -   Familiarise yourself with the dataset by reading the data dictionary and reference [here](http://openintrostat.github.io/openintro/reference/evals.html).
 -   Clone your lab repo and complete the first two exercises.

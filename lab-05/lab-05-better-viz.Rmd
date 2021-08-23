@@ -22,7 +22,7 @@ Complete the following steps before you join the live workshop!
 
 You have two tasks you should complete before the workshop:
 
-- Watch [this week's videos](https://www.introds.org/post/07-week/), especially the one on misrepresentation of data and results.
+- Watch [this week's videos](https://idsed.digital/week07/#videos), especially the one on misrepresentation of data and results.
 - Take a look at the data visualisation below (and the associated Tweet) and think about what is misleading about the visualisation and how you might go about fixing it. Take notes and bring your notes to the workshop to share with your teammates.
 
 ## Part 1 - Masks and COVID
