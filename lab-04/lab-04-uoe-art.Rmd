@@ -124,13 +124,17 @@ Let's start with titles.
 We make use of the SelectorGadget to identify the tags for the relevant elements:
 
 ```{r iteminfo-h3a, fig.margin = TRUE, echo = FALSE}
-knitr::include_graphics("img/iteminfo-h3a.gif")
+knitr::include_graphics("img/iteminfo-new.gif")
 ```
 
 ```{r}
 page %>%
   html_elements(".iteminfo") %>%
   html_element(".record-title a")
+```
+
+```{marginfigure}
+**Erratum:** In the video, Mine refers to the functions `html_node` and `html_nodes`.  After that video was made, version 1 of the rvest package was released, which renamed these functions to `html_element` and `html_elements` respectively.  Though the old functions still work, they are now "deprecated", and so we use the new names here.
 ```
 
 Then we extract the text with `html_text()`:
@@ -375,7 +379,7 @@ And once we have completed separating the single `title` column into `title` and
 13. Who is the most commonly featured artist in the collection? Do you know them? Any guess as to why the university has so many pieces from them?
 
 ```{marginfigure}
-**Hint:** `str_subset()` can be helful here. Y
+**Hint:** `str_subset()` can be helpful here. Y
 consider how you might capture titles where the word appears as "child" and "Child".
 ```
 
