@@ -12,24 +12,28 @@ editor_options:
 ---
 
 Below are the tasks we will be working through in today's workshop.
-The primary goal in all of this is to go through a shakedown process for some of the core technology we will be using in this course.
+The primary goal in all of this is to check your all setup for the course and to go through a shakedown process for some of the core technology we will be using.
 
-Each workshop session will start with a brief introduction in the "big group" and then we will move everyone into breakout rooms in small teams.
-For this week the teams will be randomly assigned.
+Each workshop session will start with a brief introduction in the "big group" and then we will move into small teams (\~3 students).
 If you are online for this session, when in a breakout room everyone should turn on their audio and video (if possible).
 
 ```{marginfigure}
-**Note:** If you are online, after each person in the group has had a turn, everyone should provide constructive feedback on any audio or video difficulties encountered.
+**Note:** If you are online, after moving into breakout rooms, allow each person in the group to speak and everyone should provide constructive feedback on any audio or video difficulties encountered.
 ```
 
-1.  Take turns introducing yourselves (e.g. your name, where you are currently, where you studied previously, etc.). Tell the rest of your team a boring fact about yourself. (For example, "I had corn flakes for breakfast this morning.")
+1.  Take turns introducing yourselves (e.g. your name, where you are currently, where you studied previously, etc.).
+    Tell the rest of your team a boring fact about yourself.
+    (For example, "I had corn flakes for breakfast this morning.")
+
+2.  Decide on a team name and get one member to fill in the [Teams Setup](https://forms.office.com/r/hifiPQGTxH) form.
+    Feel free to be creative with the name (provided its not offensive or inappropriate).
 
 ```{marginfigure}
-**Note:** Each participant in the team needs to have completed the "first time setup"" to be able to do the rest of the workshop.
+**Note:** Each participant in the team needs to have completed the "first time setup" to be able to do the rest of the workshop.
     Team members who have already got themselves setup can move on and include the remaining members once they are ready.
 ```
 
-2.  Before the session, you should have completed the [Getting to know you survey](https://forms.office.com/Pages/ResponsePage.aspx?id=sAafLmkWiUWHiRCgaTTcYdffF13VDSBAsmaFgj3BcYtUREVZQUVSWjY2UlZDTVdMWjM3NzI3VzVQUi4u) and set up accounts on:
+3.  Before the session, you should have completed the [Getting to know you survey](https://forms.office.com/Pages/ResponsePage.aspx?id=sAafLmkWiUWHiRCgaTTcYdffF13VDSBAsmaFgj3BcYtUREVZQUVSWjY2UlZDTVdMWjM3NzI3VzVQUi4u) and set up accounts on:
 
     -   GitHub
     -   RStudio Cloud
@@ -44,47 +48,70 @@ We're now going to start working with R code.
 Don't worry today if you don't understand what every line of code does---the purpose of this workshop is to give you experience working with RStudio Cloud, and pushing, committing and pulling from/to GitHub.
 Mostly you'll just be replacing text in a data frame in an R Markdown file in your team's repository.
 
+Every member of the team who has already completed Exercise 3, should perform the following.
+
+```{marginfigure}
+**Note:** From next weeks lab onwards, your repository will contain your teamname instead (e.g. lab-01-plastic-waste-example_team). Also you will not be able to see other teams repositories (for obvious reasons).
+```
+
+4.  Find your team repository on the course's GitHub organisation page (<https://github.com/ids-s1-21>). For this week, each group should have a team number (e.g. team\_\<number\>) assigned by the tutor, so your repository will look like lab-00-hello-ids-team\_\<number\>. To find this you could search it in the "find a respository" search bar. Copy the web address for the repository from your web browsers address bar.
+
+```{marginfigure}
+**Note:** If you need more detailed instructions with images, follow steps 1 to 4 on the [Opening a Project](https://idsed.digital/troubleshoot/setup/openingaproject/) troubleshooting page.
+```
+
+5.  Now we need to set up an RStudio Cloud project for the lab by **cloning** the a repository.
+    Go to [RStudio Cloud](https://rstudio.cloud/), navigate to the "IDS 2021" space, click "New Project", "New Project from Git Repository", and then paste the address of the GitHub repository.
+
+6.  We now need to setup the RStudio Cloud project so it can push and pull changes to and from the GitHub repository.
+    To do this, follow steps 5-17 of the [Opening a Project](https://idsed.digital/troubleshoot/setup/openingaproject/) troubleshooting page.
+
+Now we are finally ready to start learning R!
 Lets start by making a data frame.
 Normally we'll load these from outside R, but you can also create them within R as well, using a function called "`tibble`".
 This isn't something you'll want to do except for really simple data frames---like the one we're about to make!
 
-The data frame we'll make will contain three variables: the name of each member of the team, the outcome of rolling a die for each member, and a colour for each member.
+The data frame we'll make will contain three variables: the GitHub username of each member of the team, the outcome of rolling a die for each member, and a colour for each member, and a hobby.
 We're going to fill in the data frame with some information.
 
-The entries for the first column, for someone called Jamie, are already filled in for you.
+The entries for the first column, for one of your course organisers (David), are already filled in for you.
 Leave these in place.
 
-3.  Decide in what order you will work on the task (i.e. who is going first, second, third).
+```{marginfigure}
+**Note:** For this week alone, your repository will be public so only input information you don't mind being publicly availble for a short period of time. As these repositories are only examples, we will be deleting them at the end of the day so they don't clutter the course organisation page up.
+```
 
-Now, in turn, each member of the team should perform the following.
+7.  Decide in what order you will work on the task (i.e. who is going first, second, third).
 
-4.  Using the Git tab in the top-right, **pull** your team's repository from GitHub into RStudio Cloud.
-    (It will contain your team name in the name of the repository).
+Now, **in turn**, each member of the team should perform the following.
 
-5.  Add your name into the first unused space in the `names` vector (i.e. the first person replaces the text `Name 1`, the second person replaces the text `Name 2`, and the third person replaces the text `Name 3`; if you have four or more people on your team the fourth person will have to add a completely new entry to the vector).
+```{marginfigure}
+**Note:** If you are the first member of the group to work on the repository, then this will not change anything (because you haven't changed anything yet).
+```
+
+8.  Add your GitHub username into the first unused space in the `usernames` vector (i.e. the first person replaces the text `username 1`, the second person replaces the text `username 2`, and the third person replaces the text `username 3`; if you have four or more people on your team the fourth person will have to add a completely new entry to the vector).
 
 ```{r die, echo = FALSE, fig.margin = T}
 knitr::include_graphics("img/d20.jpg")
 ```
 
-6.  Roll a 20-sided die.
-    (You can do this within R by typing `sample(20, 1)` into the console---or just roll a die, if you happen to have one with you!)
+9.  Roll a 20-sided die.
+    You can do this within R by typing `sample(20, 1)` into the console (or just roll a die, if you happen to have one with you)!
     Enter the result into the `nums` vector, replacing the next `NA` (or extending the vector, if you are the fourth or later member of your team).
     **Do not** enclose it in quotes!
 
-7.  Pick a colour, and enter it into the `colours` vector, like you did with your name.
+10. Pick a colour, and enter it into the `colours` vector, like you did with your username.
     If you want to see a list of available colours, type `colours()` (or `colors()`) into the console, and press Enter.
 
-8.  Put one of your hobbies in the `hobbies` vector, like you did with your name.
+11. Put one of your hobbies in the `hobbies` vector, like you did with your username.
     This can be anything you like, but make sure it has quotes around it!
 
-9.  Pull again (in case anyone has made changes since the last time you pulled), commit (using a message like "Added Jamie's entries") and push, using the Git tab at the top-right.
-    Make sure your commit messages say which exercise you have completed.
+12. **Pull** again (in case anyone has made changes since the last time you pulled---they shouldn't have if you have been taking turns!), commit (using a message like "Added eldave's entries") and push, using the Git tab at the top-right.
 
 If everyone in the team has completed Exercises 4--9, move on to the next exercise.
 Otherwise, the next member of your team should go back to Exercise 4.
 
-10. "Uncomment" the three lines that look like the code below (that is, remove the `#` symbol from the beginning, so that R knows to run them as lines of code). Then press the "Knit" button. You should see that a plot has appeared in your R Markdown document, just after the code.
+13. "Uncomment" the three lines that look like the code below (that is, remove the `#` symbol from the beginning, so that R knows to run them as lines of code). Then press the "Knit" button. You should see that a plot has appeared in your R Markdown document, just after the code.
 
 ```{r colplot, echo = T}
 # p <- ggplot(team_data, aes(x = name, y = die_roll)) +
@@ -92,17 +119,17 @@ Otherwise, the next member of your team should go back to Exercise 4.
 # p
 ```
 
-11. What does the plot show?
+14. What does the plot show?
     Type your answer into the space provided in your team's R Markdown document.
 
-12. Uncomment the code corresponding to this exercise, and press the "Knit" button.
+15. Uncomment the code corresponding to this exercise, and press the "Knit" button.
     What's changed about this plot?
 
-13. Replace `Insert text here` each time it appears with sensible choices of text.
+16. Replace `Insert text here` each time it appears with sensible choices of text.
     Press the "Knit" button.
 
-14. Have a look at the plot on the knitted R Markdown document for "Exercise 14".
-    (Re-knit the document if you need to.) This plot probably isn't a good data visualisation, unless one of your team also has photography as a hobby.
+17. Have a look at the plot on the knitted R Markdown document for "Exercise 16".
+    (Re-knit the document if you need to.) This plot probably isn't a good data visualisation, unless one of your team also has drumming as a hobby.
     In fact, suppose you had a data frame that extended to everyone taking this course.
     The data visualisation produced by this method would probably be even worse at conveying information.
     Why?
@@ -110,4 +137,5 @@ Otherwise, the next member of your team should go back to Exercise 4.
     (You do not need to write code to do this!)
 
 That's the end of this lab!
-Remember, this lab isn't marked.
+Remember, this lab isn't marked, so if you did not reach the end you don't have to worry about it.
+To reduce the amount of repositories on your GitHub organisation page, for this week alone, we will delete the repository at the end of the day (its just for practice this week).
