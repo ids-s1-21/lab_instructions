@@ -178,7 +178,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><label for="tufte-mn-6" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-6" class="margin-toggle"><span class="marginnote"><span style="display: block;"><strong>Note:</strong> We recommend you do this setup in future weeks (week 2+) before coming to class so you can start working on R code with your teammates quicker.</span></span></p>
 <p>If you have managed all that <strong>congratulations</strong>! This setup will become easier each week and you only need to do it for each project/repository once.</p>
 <p>Now we are finally ready to start learning R! Don’t worry today if you don’t understand what every line of code does—the purpose of this workshop is to give you experience working with RStudio Cloud. Lets start by making a data frame. Normally we’ll load these from outside R, but you can also create them within R as well, using a function called “<code>tibble</code>”. This isn’t something you’ll want to do except for really simple data frames—like the one we’re about to make!</p>
-<p>The data frame we’ll make will contain three variables: the GitHub username of each member of the team, the outcome of rolling a die for each member, and a colour for each member, and a hobby. We’re going to fill in the data frame with some information.</p>
+<p>The data frame we’ll make will contain four variables: the GitHub username of each member of the team, the outcome of rolling a die for each member, and a colour for each member, and a hobby. We’re going to fill in the data frame with some information.</p>
 <p>The entries for the first column, for one of your course organisers (David), are already filled in for you. Leave these in place.</p>
 <ol start="7" style="list-style-type: decimal">
 <li>Decide in what order you will work on the task (i.e. who is going first, second, third).</li>
@@ -203,7 +203,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol start="13" style="list-style-type: decimal">
 <li>“Uncomment” the three lines that look like the code below (that is, remove the <code>#</code> symbol from the beginning, so that R knows to run them as lines of code). Then press the “Knit” button. You should see that a plot has appeared in your R Markdown document, just after the code.</li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p &lt;- ggplot(team_data, aes(x = name, y = die_roll)) +</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p &lt;- ggplot(team_data, aes(x = username, y = die_roll)) +</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_col(fill = team_data$colour)</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># p</span></span></code></pre></div>
 <ol start="14" style="list-style-type: decimal">
