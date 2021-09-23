@@ -16,16 +16,16 @@ The primary goal in all of this is to form your teams for the class, check your 
 If you do not get through all of the Lab work today, this is not an issue.
 
 ```{marginfigure}
-**Example:** You turn upto the workshop and after introducing yourself, your tutor will tell you that you are allocated to group 12. After a brief introduction you will then be asked to form a smaller team of around 3 students with other students in your same group. After forming them your tutor will come round and tell you that you are now "group12_2". You can then use this to find your workshop repository later in the workshop.
+**Example:** You turn up to the workshop and after introducing yourself, your tutor will tell you that you are allocated to group 12. After a brief introduction you will then be asked to form a smaller team of around 3 students with other students in your same group. After forming them your tutor will come round and tell you that you are now "group12_2". You can then use this to find your workshop repository later in the workshop.
 ```
 
 Each workshop session will start with a brief introduction in the "big group" and then you will form your teams.
 Who you can form a team with will depend on your pre-allocated group number.
-These groups have been formed by the timetable unit for track-and-trace purposes (hense why we need you to turn up to the right room and time).
+These groups have been formed by the timetable unit for track-and-trace purposes (hence why we need you to turn up to the right room and time).
 These groups are a little big for the purposes of the class (they are around 12 students), so we will ask you to form smaller subteams (\~3 students).
 Once formed, we will allocate you a number.
 
-If you are online for this session, you will be told to go to your groups breakout room to find other online teammates.
+If you are online for this session, you will be told to go to your group's breakout room to find other online teammates.
 When in a breakout room everyone should turn on their audio and video (if possible).
 
 ```{marginfigure}
@@ -41,7 +41,7 @@ When in a breakout room everyone should turn on their audio and video (if possib
 
 ```{marginfigure}
 **Note:** Each participant in the team needs to have completed the "first time setup" to be able to do the rest of the workshop.
-    Team members who have already got themselves setup can move on and include the remaining members once they are ready.
+    Team members who have already got themselves set up can move on and include the remaining members once they are ready.
 ```
 
 3.  Before the session, you should have completed the [Getting to know you survey](https://forms.office.com/Pages/ResponsePage.aspx?id=sAafLmkWiUWHiRCgaTTcYdffF13VDSBAsmaFgj3BcYtUREVZQUVSWjY2UlZDTVdMWjM3NzI3VzVQUi4u) and set up accounts on:
@@ -53,16 +53,16 @@ When in a breakout room everyone should turn on their audio and video (if possib
     If you haven't, make sure you do the first two now, and link the GitHub and RStudio Cloud accounts.
     Instructions on how to do this can be found on the [Setup & Troubleshooting](https://ids-s1-21.netlify.app/troubleshoot/) page on the course website.
 
-    If you encounter any issue you can ask for help by raising your hand (in person) or pressing the **Ask for help** button (within Zoom).
+    If you encounter any issues you can ask for help by raising your hand (in person) or by pressing the **Ask for help** button (within Zoom).
 
-We're now going to setup a RStudio Cloud project.
+We're now going to set up a RStudio Cloud project.
 Every member of the team who has already completed Exercise 3, should perform the following.
 
 ```{marginfigure}
 **Note:** From next weeks lab onwards, your repository will contain your teamname instead (e.g. lab-01-plastic-waste-example_team). Also you will not be able to see other teams repositories (for obvious reasons).
 ```
 
-4.  Find your team repository on the course's GitHub organisation page (<https://github.com/ids-s1-21>). For this week, each group should have a team number (e.g. group\_\<number\>\_\<number\>) assigned by the tutor, so your repository will look like lab-00-hello-ids-group\_\<number\>\_\<number\>. You should be able to see this on the GitHub organisation page (<https://github.com/ids-s1-21>), or you could search it in the "find a respository" search bar. Copy the web address for the repository from your web browsers address bar.
+4.  Find your team repository on the course's GitHub organisation page (<https://github.com/ids-s1-21>). For this week, each group should have a team number (e.g. group\_\<number\>\_\<number\>) assigned by the tutor, so your repository will look like lab-00-hello-ids-group\_\<number\>\_\<number\>. You should be able to see this on the GitHub organisation page (<https://github.com/ids-s1-21>), or you could search it in the "find a repository" search bar. Copy the web address for the repository from your web browsers address bar.
 
 ```{marginfigure}
 **Note:** If you need more detailed instructions with images, follow steps 1 to 4 on the [Opening a Project](https://idsed.digital/troubleshoot/setup/openingaproject/) troubleshooting page.
@@ -71,7 +71,7 @@ Every member of the team who has already completed Exercise 3, should perform th
 5.  Now we need to set up an RStudio Cloud project for the lab by **cloning** the a repository.
     Go to [RStudio Cloud](https://rstudio.cloud/), navigate to the "IDS 2021" space, click "New Project", "New Project from Git Repository", and then paste the address of the GitHub repository.
 
-6.  We now need to setup the RStudio Cloud project so it can push and pull changes to and from the GitHub repository.
+6.  We now need to set up the RStudio Cloud project so it can push and pull changes to and from the GitHub repository.
     To do this, follow steps 5-17 of the [Opening a Project](https://idsed.digital/troubleshoot/setup/openingaproject/) troubleshooting page.
 
 ```{marginfigure}
