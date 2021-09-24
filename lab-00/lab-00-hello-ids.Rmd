@@ -118,8 +118,11 @@ knitr::include_graphics("img/d20.jpg")
 11. Put one of your hobbies in the `hobbies` vector, like you did with your username.
     This can be anything you like, but make sure it has quotes around it!
 
-12. **Commit** your changes by pressing commit and ticking all the boxes on the left, type your message in the box, and then press **commit**.
-    Now **Pull** again (in case anyone has made changes since the last time you pulled---they shouldn't have if you have been taking turns!), and push, using the Git tab at the top-right.
+```{marginfigure}
+**WARNING:** Don't click the button the says: "Amend previous commits" - it can cause some errors!
+```
+
+12. **Commit** your changes by pressing commit and ticking all the boxes on the left, type your message in the box, and then press **commit**. Now **Pull** again (in case anyone has made changes since the last time you pulled---they shouldn't have if you have been taking turns!), and **push**, using the Git tab at the top-right.
 
 ```{marginfigure}
 **Note:** If others have been changing the code too you will run into a "merge conflict". This will add a bunch of stuff to your code. See here for how to fix it: https://stackoverflow.com/questions/10657315/git-merge-left-head-marks-in-my-files and ask your tutor :)
