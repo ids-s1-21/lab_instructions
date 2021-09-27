@@ -31,18 +31,13 @@ Complete the following steps before you come to the workshop!
 # Getting started
 
 ```{marginfigure}
-**IMPORTANT:** If there is no GitHub repo created for you for this assignment, it means I didn't have your GitHub username as of when I assigned the homework. Please let me know your GitHub username ASAP, and I can create your repo.
+**IMPORTANT:** If there is no GitHub repo created for you for this assignment, it means I didn't have your GitHub username or team assignment when I assigned the lab. Please let David Elliott know this and he can create your repo.
 ```
 
-Go to the course [GitHub organization](https://github.com/ids-s1-20) and locate your Lab 01 repo, which should be named `lab-01-plastic-waste-YOUR_GITHUB_USERNAME`.
-If you're in the right place, it should look like the following.
-
-```{r echo=FALSE, eval=TRUE}
-knitr::include_graphics("img/repo-begin.png")
-```
+Go to the course [GitHub organization](https://github.com/ids-s1-21) and locate your Lab 01 repo, which should be named `lab-01-plastic-waste-YOUR_TEAM_NAME`.
 
 Grab the URL of the repo, and clone it in RStudio.
-Refer to [HW 00](https://ids-s1-20.github.io/homework/hw-00/hw-00-pet-names.html) if you would like to see step-by-step instructions for cloning a repo into an RStudio project.
+Refer to the [Opening a Project](https://idsed.digital/troubleshoot/setup/openingaproject/) troubleshooting page if you would like to see step-by-step instructions for cloning a repo into an RStudio project.
 
 First, open the R Markdown document `lab-01.Rmd` and Knit it.
 Make sure it compiles without errors.
@@ -221,7 +216,7 @@ Aim to make it to this point during the live workshop.
 
 # Wrapping up
 
-We don't expect you to complete all of the exercises within the 80 minutes reserved for the live workshop.
+We don't expect you to complete all of the exercises within the time reserved for the live workshop.
 Ideally, you should have got to this point.
 If you still have some time left, move on to the remaining exercises below.
 If not, you should find a time to meet with your team and complete them after the workshop.
@@ -251,8 +246,4 @@ plastic_waste %>%
 
 `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` *Commit and push your changes to GitHub with an appropriate commit message again. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
-Once you're done, check to make sure your latest changes are on GitHub and that you have a green indicator for the automated check for your R Markdown document knitting.
-
-```{r echo=FALSE, eval=TRUE}
-knitr::include_graphics("img/repo-end.png")
-```
+Once you're done, check to make sure your latest changes are on GitHub and all your code is inside the .md file (created by pressing "knit").
