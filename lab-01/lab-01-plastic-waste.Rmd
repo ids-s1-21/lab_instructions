@@ -25,7 +25,7 @@ Additionally, National Geographic ran a data visualization communication contest
 -   Get more practice using with Git and GitHub.
 
 ::: {.home}
-Complete the following steps before you come to the workshop!
+In future weeks we will ask you complete some steps before you come to the workshop!
 :::
 
 # Getting started
@@ -33,6 +33,8 @@ Complete the following steps before you come to the workshop!
 ```{marginfigure}
 **IMPORTANT:** If there is no GitHub repo created for you for this assignment, it means I didn't have your GitHub username or team assignment when I assigned the lab. Please let David Elliott know this and he can create your repo.
 ```
+
+Check that you have been added to the team you expected (https://github.com/orgs/ids-s1-21/teams). If not then please let David know (you can go find him in the workshop if in Appleton Tower, or give him an email).
 
 Go to the course [GitHub organization](https://github.com/ids-s1-21) and locate your Lab 01 repo, which should be named `lab-01-plastic-waste-YOUR_TEAM_NAME`.
 
