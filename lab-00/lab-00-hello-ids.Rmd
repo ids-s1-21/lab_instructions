@@ -59,7 +59,7 @@ We're now going to set up a RStudio Cloud project.
 Every member of the team who has already completed Exercise 3, should perform the following.
 
 ```{marginfigure}
-**Note:** From next weeks lab onwards, your repository will contain your teamname instead (e.g. lab-01-plastic-waste-example_team). Also you will not be able to see other teams repositories (for obvious reasons).
+**Note:** From next week's lab onwards, your repository will contain your teamname instead (e.g. lab-01-plastic-waste-example_team). Also you will not be able to see other teams' repositories (for obvious reasons).
 ```
 
 4.  Find your team repository on the course's GitHub organisation page (<https://github.com/ids-s1-21>). For this week, each group should have a team number (e.g. group\_\<number\>\_\<number\>) assigned by the tutor, so your repository will look like lab-00-hello-ids-group\_\<number\>\_\<number\>. You should be able to see this on the GitHub organisation page (<https://github.com/ids-s1-21>), or you could search it in the "find a repository" search bar. Copy the web address for the repository from your web browsers address bar.
@@ -119,7 +119,7 @@ knitr::include_graphics("img/d20.jpg")
     This can be anything you like, but make sure it has quotes around it!
 
 ```{marginfigure}
-**WARNING:** Don't click the button the says: "Amend previous commits" - it can cause some errors!
+**WARNING:** Don't click the button that says: "Amend previous commits" - it can cause some errors!
 ```
 
 12. **Commit** your changes by pressing commit and ticking all the boxes on the left, type your message in the box, and then press **commit**. Now **Pull** again (in case anyone has made changes since the last time you pulled---they shouldn't have if you have been taking turns!), and **push**, using the Git tab at the top-right.

@@ -67,7 +67,7 @@ The variable descriptions are as follows:
 -   `entity`: Country name
 -   `continent`: Continent name
 -   `year`: Year
--   `gdp_per_cap`: GDP per capita constant 2011 international \$, rate
+-   `gdp_per_cap`: GDP per capita constant 2011 [international \$](https://datahelpdesk.worldbank.org/knowledgebase/articles/114944-what-is-an-international-dollar), rate
 -   `plastic_waste_per_cap`: Amount of plastic waste per capita in kg/day
 -   `mismanaged_plastic_waste_per_cap`: Amount of mismanaged plastic waste per capita in kg/day
 -   `mismanaged_plastic_waste`: Tonnes of mismanaged plastic waste
@@ -164,7 +164,7 @@ ggplot(data = plastic_waste,
 
 The overlapping colors make it difficult to tell what's happening with the distributions in continents plotted first, and hence coverred by continents plotted over them.
 We can change the transparency level of the fill color to help with this.
-The `alpha` argument takes values between 0 and 1: 0 is completely transparent and 1 is completely opaque.
+The `alpha` argument takes values between 0 and 1: the value 0 is completely transparent and 1 is completely opaque.
 There is no way to tell what value will work best, so you just need to try a few.
 
 ```{r plastic_waste_per_cap-dens-color-fill-alpha}
@@ -181,7 +181,7 @@ This still doesn't look great...
 
 2.  Describe why we defined the `color` and `fill` of the curves by mapping aesthetics of the plot but we defined the `alpha` level as a characteristic of the plotting geom.
 
-`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` *Now is a good time to commit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` *Now is a good time to commit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files (that is, make sure every file has a tick next to it) so that your Git pane is cleared up afterwards.*
 
 And yet another way to visualize this relationship is using side-by-side box plots.
 
@@ -208,7 +208,7 @@ ggplot(data = plastic_waste,
     You will need to make two separate plots.
     Do either of these pairs of variables appear to be more strongly linearly associated?
 
-`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` *Now is another good time to commit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` *Now is another good time to commit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files (that is, make sure every file has a tick next to it) so that your Git pane is cleared up afterwards.*
 
 ::: {.marker}
 Aim to make it to this point during the live workshop.
@@ -244,6 +244,6 @@ plastic_waste %>%
     theme_minimal()
 ```
 
-`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` *Commit and push your changes to GitHub with an appropriate commit message again. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+`r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` *Commit and push your changes to GitHub with an appropriate commit message again. Make sure to commit and push all changed files (that is, make sure every file has a tick next to it) so that your Git pane is cleared up afterwards.*
 
 Once you're done, check to make sure your latest changes are on GitHub and all your code is inside the .md file (created by pressing "knit").
