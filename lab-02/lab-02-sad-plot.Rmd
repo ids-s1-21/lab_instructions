@@ -52,7 +52,7 @@ knitr::include_graphics("img/Speaking-the-world.jpg")
 
 Once you're done with this, give a number to each team member.
 ```{marginfigure}
-If you want to assign numbers at random, you can go to the [Random.org sequence generator](https://www.random.org/sequences/?min=1&max=6&col=1&format=html&rnd=new), and assign the first number that appears to the person whose name is first in the alphabet, and so on.  Skip over any numbers that are larger than the size of your team.
+If you want to assign numbers at random, you can go to the [Random.org sequence generator](https://www.random.org/sequences/?min=1&max=4&col=1&format=html&rnd=new), and assign the first number that appears to the person whose name is first in the alphabet, and so on.  Skip over any numbers that are larger than the size of your team.
 ```
 In this lab, team members will take turns sharing their screen and working on an exercise in the common team repo, commit and push their changes, and then the next team member will take over and **pull** the changes before they make any further changes to their lab.
 In the lab instructions you'll see markers for
