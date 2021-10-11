@@ -34,15 +34,13 @@ You have two tasks you should complete before the workshop:
 
 ## Merges and merge conflicts
 
-This is the second week you're working in teams, so we're going to make things a little more interesting and let all of you make changes and push those changes to your team repository.
-Sometimes things will go swimmingly, and sometimes you'll run into merge conflicts.
-So our first task today is to walk you through a merge conflict!
+You should by now have a bit of experience with Git and Github, and so now lets deliberately make a merge conflict so we can have more practice fixing them.
 
 -   Pushing to a repo replaces the code on GitHub with the code you have on your computer.
 -   If a collaborator has made a change to your repo on GitHub that you haven't incorporated into your local work, GitHub will stop you from pushing to the repo because this could overwrite your collaborator's work!
 -   So you need to explicitly "merge" your collaborator's work before you can push.
--   If your and your collaborator's changes are in different files or in different parts of the same file, git merges the work for you automatically when you \*pull\*.
--   If you both changed the same part of a file, git will produce a \*\*merge conflict\*\* because it doesn't know how which change you want to keep and which change you want to overwrite.
+-   If your and your collaborator's changes are in different files or in different parts of the same file, git merges the work for you automatically when you *pull*.
+-   If you both changed the same part of a file, git will produce a **merge conflict** because it doesn't know how which change you want to keep and which change you want to overwrite.
 
 Git will put conflict markers in your code that look like:
 
@@ -76,7 +74,7 @@ Complete the following steps during the live workshop with your team.
 ## Setup
 
 -   Clone the repo and open the .Rmd file.
--   Assign the numbers 1, 2, 3, and 4 to each of the team members. If your team has fewer than 4 people, some people will need to have multiple numbers. If your team has more than 4 people, some people will need to share some numbers.
+-   Assign the numbers 1, 2, 3, and 4 to each of the team members. If your team has fewer than 4 people, some people will need to have multiple numbers.
 
 ## Let's cause a merge conflict!
 
@@ -139,9 +137,9 @@ If you feel like you won't be able to resist the urge to touch your computer whe
 
 ## Repository
 
-**EVERYONE:** Go to course [GitHub organization](https://github.com/ids-s1-20) and locate your Lab 03 repo, which should be named `lab-03-nobel-laureates-YOUR_TEAMNAME`.
+**EVERYONE:** Go to course [GitHub organization](https://github.com/ids-s1-21) and locate your Lab 03 repo, which should be named `lab-03-nobel-laureates-YOUR_TEAMNAME`.
 Grab the URL of the repo, and clone it in RStudio Cloud.
-Refer to [HW 00](https://ids-s1-20.github.io/homework/hw-00/hw-00-pet-names.html) if you would like to see step-by-step instructions for cloning a repo into an RStudio project.
+Refer to [these instructions](https://idsed.digital/troubleshoot/setup/openingaproject/) if you would like to see step-by-step instructions for cloning a repo into an RStudio project and setting up the project with GitHub.
 
 First, open the R Markdown document `lab-03.Rmd` and knit it.
 Make sure it compiles without errors.
@@ -151,13 +149,13 @@ The output will be a markdown document (`.md`) file with the same name.
 
 Before getting started with the Exercises, run the following code in the Console to load this package.
 
-```{r load-packages, message = FALSE}
+```{r load-packages, message = FALSE, warning=FALSE}
 library(tidyverse)
 ```
 
 ## Data: Nobel laureates
 
-The dataset for this assignment can be found as a csv file in the \`data\` folder of your repository.
+The dataset for this assignment can be found as a csv file in the `data` folder of your repository.
 You can read it in using the following.
 
 ```{r load-data, message = FALSE}
@@ -187,8 +185,8 @@ The variable descriptions are as follows:
 -   `share`: Number of other winners award is shared with
 -   `motivation`: Motivation for recognition
 
-In a few cases the name of the city/country changed after laureate was given (e.g. in 1975 Bosnia and Herzegovina was called the Socialist Federative Republic of Yugoslavia).
-In these cases the variables below reflect a different name than their counterparts without the suffix \`\_original\`.
+In a few cases the name of the city/country changed after the prize was given (e.g. in 1975 Bosnia and Herzegovina was called the Socialist Federative Republic of Yugoslavia).
+In these cases the variables below reflect a different name than their counterparts without the suffix `_original`.
 
 -   `born_country_original`: Original country where laureate was born
 -   `born_city_original`: Original city where laureate was born
@@ -317,13 +315,3 @@ Once you decide as a team that you're done with this lab, all members of the tea
 The plots in the BuzzFeed News article are called waffle plots.
 You can find the code used for making these plots in BuzzFeed News's GitHub repo (yes, they have one!) [here](https://buzzfeednews.github.io/2017-01-immigration-and-science/).
 You're not expected to recreate them as part of your assignment, but you're welcomed to do so for fun!
-
-# Using your lab template
-
-In your lab template this week (and going forward) you'll see markers that indicate exercise numbers as well as narrative and code portions.
-Please don't remove or alter these markers as they are used for automarking your work.
-If you remove or alter them, your work might not be marked properly.
-
-```{r echo=FALSE}
-knitr::include_graphics("img/markers.png")
-```
