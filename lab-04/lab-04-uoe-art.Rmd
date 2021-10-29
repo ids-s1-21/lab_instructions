@@ -360,6 +360,10 @@ And once we have completed separating the single `title` column into `title` and
 
 9.  Fill in the blanks in to implement the data wrangling we described above. Note that this will result in some warnings when you run the code, and that's OK! Read the warnings, and explain what they mean, and why we are ok with leaving them in given that our objective is to just capture `year` where it's convenient to do so.
 
+```{marginfigure}
+**Hint:** Make sure to remove `eval=FALSE` from the code chunk label once you have changed the code to make sure you avoid issues when you knit.
+```
+
 10. Print out a summary of the data frame using the `skim()` function.
     How many pieces have artist info missing?
     How many have year info missing?
