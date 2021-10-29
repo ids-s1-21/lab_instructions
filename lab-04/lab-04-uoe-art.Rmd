@@ -19,7 +19,7 @@ The University of Edinburgh Art Collection *"supports the world-leading research
 [^1]: Source: <https://collections.ed.ac.uk/art/about>
 
 ```{marginfigure}
-See the sidebar [here](https://collections.ed.ac.uk/art) and note that there are 2983 pieces in the art collection we're collecting data on.
+See the sidebar [here](https://collections.ed.ac.uk/art) and note that there are 2986 pieces in the art collection we're collecting data on.
 ```
 
 In this workshop we'll scrape data on all art pieces in the [Edinburgh College of Art collection](https://collections.ed.ac.uk/art/search/*:*/Collection:%22edinburgh+college+of+art%7C%7C%7CEdinburgh+College+of+Art%22).
@@ -285,10 +285,10 @@ We went from manually scraping individual pages to writing a function to do the 
 Next, we will work on making our workflow a little more efficient by using R to iterate over all pages that contain information on the art collection.
 
 ```{marginfigure}
-**Reminder:** The collection has 2983 pieces in total.
+**Reminder:** The collection has 2986 pieces in total.
 ```
 
-That means we give develop a list of URLs (of pages that each have 10 art pieces), and write some code that applies the `scrape_page()` function to each page, and combines the resulting data frames from each page into a single data frame with 2983 rows and 3 columns.
+That means we give develop a list of URLs (of pages that each have 10 art pieces), and write some code that applies the `scrape_page()` function to each page, and combines the resulting data frames from each page into a single data frame with 2986 rows and 3 columns.
 ## List of URLs
 
 Click through the first few of the pages in the art collection and observe their URLs to confirm the following pattern:
@@ -300,7 +300,7 @@ Click through the first few of the pages in the art collection and observe their
     ...
     [sometext]offset=2960  # Pieces 2961-2970
     [sometext]offset=2970  # Pieces 2971-2980
-    [sometext]offset=2980  # Pieces 2981-2983
+    [sometext]offset=2980  # Pieces 2981-2986
 
 We can construct these URLs in R by pasting together two pieces: (1) a common (`root`) text for the beginning of the URL, and (2) numbers starting at 0, increasing by 10, all the way up to 2980.
 Two new functions are helpful for accomplishing this: `glue()` for pasting two pieces of text and `seq()` for generating a sequence of numbers.
