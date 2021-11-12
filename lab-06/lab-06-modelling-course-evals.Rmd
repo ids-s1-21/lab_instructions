@@ -61,7 +61,7 @@ During the workshop we'll use the following three packages:
 
 # Part 1: Exploratory Data Analysis
 
-1.  Visualize the distribution of `score`. Is the distribution skewed? What does that tell you about how students rate courses? Is this what you expected to see? Why, or why not? Include any summary statistics and visualizations you use in your response.
+1.  Visualize the distribution of `score` in the dataframe `evals`. Is the distribution skewed? What does that tell you about how students rate courses? Is this what you expected to see? Why, or why not? Include any summary statistics and visualizations you use in your response.
 2.  Visualize and describe the relationship between `score` and `bty_avg` using `geom_point()` to represent the data. Then, visualise again using `geom_jitter()` for the points. What does "jitter" mean? What was misleading about the initial scatterplot?
 
 ::: {.video}
