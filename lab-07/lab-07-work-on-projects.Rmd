@@ -19,18 +19,21 @@ Your lab score will be based on having completed these steps and, as usual, indi
 Once you complete these, use the rest of the time to, well, work on your project!
 Remember, your project assignment is [here](https://idsed.digital/assessments/project/).
 
-If you haven't yet done so (I know some team members have not!) go to the course organization on GitHub and clone your project repo titled `project-TEAM_NAME`.
-And if you have, pull before you proceed since I've made some updates to your repos.
+If you haven't yet done so go to the course organization on GitHub and clone your project repo titled `project-TEAM_NAME`.
 
 ## extra
 
-A new folder called `extra` has been added to your repos.
+You may notice a folder called `extra` in your repos.
 Any extra documents you might have go here.
 This might include Rmd files you're using to develop your project, any notes, or anything else.
 The contents of this folder will **not** be marked, it's just a convenient place to store documents and collaborate with teammates without cluttering the rest of your repo.
 
 -   If you have any extra documents in your repo, move them into this folder. To move files in RStudio: go to your Files pane and check the boxes next to the files you want to move, click on More, and then Move... and select the `extra` folder.
--   Commit and push your changes. Once you do, your `Check allowed files` check should pass.
+-   Commit and push your changes.
+
+```{marginfigure}
+On the repository on GitHub, you probably want to click on the gear icon next to **About** and add a very brief description of your project.
+```
 
 ## README
 
@@ -40,7 +43,7 @@ Observe that these are updated in the README of the repo.
 
 ## Slides
 
--   Open the `presentation.Rmd` file in the `presentation` folder, knit the document, and review the presentation format. This is where your presentation will go. Update the YAML with your project title, team name, etc. and commit and push your changes.
+-   Open the `presentation.Rmd` file in one of the subfolders in the `presentation` folder, knit the document, and review the presentation format. Once you have made a decision about which html slide library to use, you can move your slides into the main `presentation` folder. Update the YAML with your project title, team name, etc. and commit and push your changes.
 
 ```{marginfigure}
 Remember that your data lives in a folder called data that is not inside your presentation folder. So you need to specify the path to your data with here::here("data/name_of_datafile") in your read_csv() (or similar) function.
@@ -48,22 +51,7 @@ Remember that your data lives in a folder called data that is not inside your pr
 
 -   Load your data in your `presentation.Rmd`, knit, and make sure everything works. Commit and push your updated proposal to your project repo.
 
-## ghpages
-
--   Go to your project repo on GitHub, click on **Settings** on the top right corner, and scroll down to the section titled **GiHub Pages**. Under **Source**, select `main` branch and the `root` folder. This will give you a URL where the website for your project will be automatically built from the content in your README. This might take a few minutes. Click on the link to confirm that the website has been built. Once the website is built, pull changes to your project.
-
-```{marginfigure}
-This website is public, but your repository will remain private, unless… you as a team decide you would like to feature your repos in your personal GitHub profiles. If so, I will help you convert your repo to a public repo at the end of the semester.
-```
-
--   You can see how a project repo website looks [here](https://ids-s1-20.github.io/project-florence_and_the_machine/). Click on the link in the presentation section and you should be able to view the rendered slides. This is the link we will use to for your slides during the presentations (if you choose to present "live", more on this below...).
--   *(Optional)* Edit the `_config.yml` document to change the theme of your project website. Your options are [architect](https://pages-themes.github.io/architect), [cayman](https://pages-themes.github.io/cayman), [dinky](https://pages-themes.github.io/dinky), [hacker](https://pages-themes.github.io/hacker), [leap-day](https://pages-themes.github.io/leap-day), [merlot](https://pages-themes.github.io/merlot), [midnight](https://pages-themes.github.io/midnight), [minima](https://pages-themes.github.io/minima), [minimal](https://pages-themes.github.io/minimal), [modernist](https://pages-themes.github.io/modernist), [slate](https://pages-themes.github.io/slate), [tactile](https://pages-themes.github.io/tactile), and [time-machine](https://pages-themes.github.io/time-machine). Suppose you want the `architect` theme, you'd add `theme: architect` to the `_config.yml` document, save, commit, and push.
-
-```{r fig.margin=TRUE, out.width = "100%", echo=FALSE}
-knitr::include_graphics("img/repo.png")
-```
-
--   Click on the gear icon next to **About** and add a very brief description of your project and the URL of your project website.
+- To view the slides/present them, you can make sure the knitted file opens in a "viewer pane", making sure the settings under the gear icon (next to "Knit"), are set to "preview in viewer pane".
 
 ## Planning
 
