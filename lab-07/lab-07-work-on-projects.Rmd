@@ -43,13 +43,13 @@ Observe that these are updated in the README of the repo.
 
 ## Slides
 
--   Open the `presentation.Rmd` file in one of the subfolders in the `presentation` folder, knit the document, and review the presentation format. Once you have made a decision about which html slide library to use, you can move your slides into the main `presentation` folder. Update the YAML with your project title, team name, etc. and commit and push your changes.
+-   Open the `presentation.Rmd` file in one of the subfolders in the `presentation` folder, knit the document, and review the presentation format. Now try the other template. Once you have made a decision about which html slide library to use, move or copy all the contents of the chosen template into the main `presentation` folder. Update the YAML with your project title, team name, etc. and commit and push your changes.
 
 ```{marginfigure}
 Remember that your data lives in a folder called data that is not inside your presentation folder. So you need to specify the path to your data with here::here("data/name_of_datafile") in your read_csv() (or similar) function.
 ```
 
--   Load your data in your `presentation.Rmd`, knit, and make sure everything works. Commit and push your updated proposal to your project repo.
+- Load your data in your `presentation.Rmd`, knit, and make sure everything works. Commit and push your updated proposal to your project repo.
 
 - To view the slides/present them, you can make sure the knitted file opens in a "viewer pane", making sure the settings under the gear icon (next to "Knit"), are set to "preview in viewer pane".
 
