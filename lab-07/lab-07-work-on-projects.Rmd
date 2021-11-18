@@ -21,7 +21,7 @@ Remember, your project assignment is [here](https://idsed.digital/assessments/pr
 
 If you haven't yet done so go to the course organization on GitHub and clone your project repo titled `project-TEAM_NAME`.
 
-## extra
+## Extra
 
 You may notice a folder called `extra` in your repos.
 Any extra documents you might have go here.
@@ -29,6 +29,7 @@ This might include Rmd files you're using to develop your project, any notes, or
 The contents of this folder will **not** be marked, it's just a convenient place to store documents and collaborate with teammates without cluttering the rest of your repo.
 
 -   If you have any extra documents in your repo, move them into this folder. To move files in RStudio: go to your Files pane and check the boxes next to the files you want to move, click on More, and then Move... and select the `extra` folder.
+- Now is also a good time to generally check things are in the right place (e.g. data is only in the data folder).
 -   Commit and push your changes.
 
 ```{marginfigure}
@@ -41,7 +42,7 @@ Add your project title and team name to the `README.Rmd` file in the repo.
 Knit, commit, and push your changes to `README.Rmd` and `README.md`.
 Observe that these are updated in the README of the repo.
 
-## Slides
+## Presentation
 
 -   Open the `presentation.Rmd` file in one of the subfolders in the `presentation` folder, knit the document, and review the presentation format. Now try the other template. Once you have made a decision about which html slide library to use, move or copy all the contents of the chosen template into the main `presentation` folder. Update the YAML with your project title, team name, etc. and commit and push your changes.
 
