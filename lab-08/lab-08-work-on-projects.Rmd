@@ -22,15 +22,41 @@ At this point your focus should be on finishing up your projects!
 
 1. **Review evaluation criteria:** When evaluating your project, we will consider the following questions:
 
+**Presentation (50 points)**
+
 - Content: Is the research question well designed and is the data being used relevant to the research question?
-- Content: Did the team use appropriate statistical procedures and interpretations of results accurately?
-- Creativity and Critical Thought: Is the project carefully thought out? Are the limitations carefully considered?
-- Does it appear that time and effort went into the planning and implementation of the project?
+
+- Statistical Knowledge: Did the team use appropriate statistical procedures and interpretations of results accurately?
+
 - Slides: Are the slides well organized, readable, not full of text, featuring figures with legible labels, legends, etc.?
-- Professionalism: How well did the team present? Does the presentation appear to be well practised? Did everyone get a chance to say something meaningful about the project?
+
+- Professionalism: How well did the team present? Does the presentation appear to be well practiced? Did everyone get a chance to say something meaningful about the project? Did the team divide the time well among themselves or got cut off going over time?
+
 - Teamwork: Did the team present a unified story, or did it seem like independent pieces of work patched together?
-- Time management: Did the team divide the time well amongst themselves or got cut off going over time?
-- Executive summary: Does it follow guidance? Is it concise but detailed enough?
+
+**Write-up (15 points)**
+
+*(Executive summary)*
+
+- Clarity of aim: The work’s aim is stated in a simple manner, questions are concrete and testable.
+
+- Methodology description: Accurately describes the data and use of data science techniques to meet the aim(s) of the project.
+
+- Interpretation: Addresses the project questions or hypothesis, and is supported by the results.
+
+- Creativity and Critical Thought: Is the project carefully thought out? Are the limitations carefully considered? Does the project demonstrate originality of thought or approach?
+
+- Concise/use of language: Is it concise but detailed enough (e.g. avoids repetition and wordiness)? Is it understandable for people not familiar with the data? Does it clearly communicate thoughts and concepts whilst utilizing an appropriate language and style?
+
+**Reproducibility and Organization (10 points)**
+
+- Repository Organisation: Are files well named and in sensible locations?
+
+- Effort: Does it appear that time and effort went into the planning and implementation of the project? (i.e. files in extra folder)
+
+- Code style/smell: Is the code easy to follow, does it have a consistent style? Is the code well organized with clear variables and function names?
+
+- Reproduciblility/Replicability: Does the code appear to be able to be run by others (e.g. no specific paths like "/cloud/project"), will they get the same results (e.g. seed set?).
 
 2. **Discuss making your project repo public:** If everyone on the team agrees, after the semester ends, I can clean your repo of any issues including marks and then make it public and transfer ownership to you (once grades for the course have been officially posted). This is a souvenir from IDS to you and something you can add to your data science portfolio! This is entirely optional and your score on the project will in no way be impacted by your decision. Let me know your decision sometime before the course ends!
 
